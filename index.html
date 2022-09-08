@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Generate a <br/><span>random password</span></h2>
+            <p class="subtitle">Never use an insecure password again.</p>
+            <button class="btn" onclick="generatePassword()">Generate passwords</button>
+            <div class="checkbox-list">
+                <div class="checkbox"> 
+                    <input id="checkbox-letters" type="checkbox"/>
+                    <label for="checkbox-letters">Letters</label>
+                </div>
+                <div class="checkbox"> 
+                    <input id="checkbox-numbers" type="checkbox"/>
+                    <label for="checkbox-numbers">Numbers</label>
+                </div>
+                <div class="checkbox"> 
+                    <input id="checkbox-characters" type="checkbox"/>
+                    <label for="checkbox-characters">Characters</label>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <div class="password-results">
+                <div class="password-result">
+                    <p id="password-one"></p>
+                </div>
+                <div class="password-result">
+                    <p id="password-two"></p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

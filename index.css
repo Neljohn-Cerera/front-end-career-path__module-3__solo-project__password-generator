@@ -1,0 +1,133 @@
+:root {
+    --clr-neutral-white: #FFFFFF;
+    --clr-neutral-gray-100: #2F3E53;
+    --clr-neutral-gray-200: #D5D4D8;
+    
+   --clr-accent-dark-blue: #1F2937;
+   --clr-accent-dark-light: #273549;
+   --clr-accent-green: #4ADF86;
+
+   --ff-inter: 'Inter', sans-serif;
+   --ff-karla: 'Karla', sans-serif;
+   --fw-karla-800: 800;
+   --fw-inter-500: 500;
+   --fw-inter-400: 400;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid var(--clr-neutral-gray-100);
+}
+
+body {
+    height: 100vh;
+    color: var(--clr-neutral-white);
+    background-color: darkblue;
+    font: inherit;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 550px;
+    max-width: 90%;
+    background-color: var(--clr-accent-dark-blue);
+    padding: 2.5em 1.5em;
+    margin-top: 2.5em;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: var(--ff-karla);
+    font-size: 24px;
+    font-weight: var(--fw-karla-800);
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-inter-400);
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--clr-accent-green);
+    color:var(--clr-neutral-white);
+    padding: .7em .5em;
+    border: none;
+    border-radius: 5px;
+    transition: all 250ms;
+    margin-bottom: 1.5em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #064E3B;
+}
+
+.password-results {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-result {
+    color: var(--clr-accent-green);
+    background-color: var(--clr-accent-dark-light);
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-inter-400);
+    margin-bottom: 1.5em;
+}
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox input {
+    height:12px;
+    width: 12px;
+    margin-right: .2em;
+}
+
+
+
+@media (min-width: 600px){
+    .btn {
+        width: 100%;
+        padding: 1em;
+    }
+    hr {
+        margin-bottom: 1.4em;
+    }
+    .password-results {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .password-result {
+        width: 45%;
+    }
+}
